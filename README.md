@@ -34,6 +34,6 @@ This app exists to showcase the continuous integration and deployment of a micro
 *Continuous Integration* is done via Github CI (which ends in a delivery on Azure Kubernetes) and Travis-CI to publish code-coverage reports on codecov.io. You can find the configuration in the .travis-ci.yml.  
 If you navigate to [travis-ci.com](https://travis-ci.com/anwesys-tutors/milestone-3-demo) you will find the different testing and compilation cycles which were triggered by commits to the master branch.
 
-*Continuous Deployment* is aimed at an Azure Kubernetes Cluster which exposes a public IP-Address to reach the respective Service.
+*Continuous Deployment* is aimed at an Azure Kubernetes Cluster which exposes a public [IP-Address](http://20.50.180.226:4711/) to reach the respective Service.
 
 The *Continuous Delivery* pipeline ends on [Docker Hub](hub.docker.com/jblossey/milestone-3-sample). Each push to the master branch triggers the re-building of the Docker image to be always up-to-date.
