@@ -6,6 +6,9 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import javax.persistence.*;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
 import java.io.Serializable;
 
 @RepositoryRestResource(collectionResourceRel = "spanishDictionary", path = "esp")
