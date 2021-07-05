@@ -22,7 +22,7 @@ public class ItalianRestControllerIntegrationTest extends Milestone3demoApplicat
 
     @Test
     public void givenItalianCiao_whenGetItalian_thenStatus200() throws Exception {
-        mvc.perform(get("/dict/it/ciao")
+        mvc.perform(get("/it/ciao")
             .contentType(MediaTypes.HAL_FORMS_JSON_VALUE)).andDo(print())
             .andExpect(status().isOk())
             .andExpect(content()
