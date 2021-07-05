@@ -1,4 +1,3 @@
-![.github/workflows/deploytoAksCluster.yml](https://github.com/anwesys-tutors/milestone-3-demo/workflows/.github/workflows/deploytoAksCluster.yml/badge.svg)
 [![Build Status](https://travis-ci.com/anwesys-tutors/milestone-3-demo.svg?branch=master)](https://travis-ci.com/anwesys-tutors/milestone-3-demo)
 ![Codecov](https://img.shields.io/codecov/c/gh/anwesys-tutors/milestone-3-demo)
 ---
@@ -31,9 +30,9 @@ Note: the database is configured to forget all changes once you terminate it. Th
 
 This app exists to showcase the continuous integration and deployment of a microservice.
 
-*Continuous Integration* is done via Github CI (which ends in a delivery on Azure Kubernetes) and Travis-CI to publish code-coverage reports on codecov.io. You can find the configuration in the .travis-ci.yml.  
+*Continuous Integration* is done via Travis-CI to publish code-coverage reports on codecov.io. You can find the configuration in the .travis-ci.yml.  
 If you navigate to [travis-ci.com](https://travis-ci.com/anwesys-tutors/milestone-3-demo) you will find the different testing and compilation cycles which were triggered by commits to the master branch.
 
-*Continuous Deployment* is aimed at an Azure Kubernetes Cluster which exposes a public [IP-Address](http://20.50.180.226:4711/) to reach the respective Service.
+*Continuous Deployment* is aimed at Heroku which exposes a public Service under <https://anwesys-ms3.herokuapp.com/>.
 
 The *Continuous Delivery* pipeline ends on [Docker Hub](hub.docker.com/jblossey/milestone-3-sample). Each push to the master branch triggers the re-building of the Docker image to be always up-to-date.
