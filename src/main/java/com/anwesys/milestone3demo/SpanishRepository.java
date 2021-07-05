@@ -1,5 +1,11 @@
 package com.anwesys.milestone3demo;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+import javax.persistence.*;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
